@@ -1,0 +1,1398 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5efe7" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta
+      name="description"
+      content="2026년 8월 22일 토요일 오후 5시 30분, 임호성 님의 환갑 잔치에 초대합니다."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="임호성 님의 환갑 초대장" />
+    <meta property="og:title" content="임호성 님의 환갑 잔치에 초대합니다" />
+    <meta
+      property="og:description"
+      content="2026년 8월 22일 토요일 오후 5시 30분 · 하인선생 일산점"
+    />
+    <meta property="og:url" content="https://aidenkjh.github.io/invitation/" />
+    <meta
+      property="og:image"
+      content="https://aidenkjh.github.io/invitation/img/web/kakao-thumbnail.jpg?v=20260818"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://aidenkjh.github.io/invitation/img/web/kakao-thumbnail.jpg?v=20260818"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="한복을 입고 미소 짓는 임호성 님" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://aidenkjh.github.io/invitation/" />
+    <title>임호성 님의 환갑 초대장</title>
+
+    <style>
+      :root {
+        --paper: #f8f3eb;
+        --paper-deep: #eee3d5;
+        --wine: #69383e;
+        --wine-dark: #482329;
+        --gold: #a97846;
+        --gold-light: #d9bf9c;
+        --ink: #302927;
+        --muted: #776c67;
+        --line: rgba(105, 56, 62, 0.17);
+        --white: #fffdf9;
+        --shadow: 0 24px 70px rgba(72, 35, 41, 0.13);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 15% 5%, rgba(169, 120, 70, 0.1), transparent 24rem),
+          radial-gradient(circle at 90% 35%, rgba(105, 56, 62, 0.08), transparent 25rem),
+          var(--paper-deep);
+        font-family: "Noto Serif KR", "Nanum Myeongjo", "Batang", serif;
+        word-break: keep-all;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      button,
+      a {
+        font: inherit;
+      }
+
+      button {
+        color: inherit;
+      }
+
+      .page {
+        position: relative;
+        width: min(100%, 520px);
+        min-height: 100vh;
+        margin: 0 auto;
+        overflow: hidden;
+        background: var(--paper);
+        box-shadow: var(--shadow);
+      }
+
+      .grain {
+        position: absolute;
+        inset: 0;
+        z-index: 20;
+        pointer-events: none;
+        opacity: 0.22;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.11'/%3E%3C/svg%3E");
+        mix-blend-mode: multiply;
+      }
+
+      .hero {
+        position: relative;
+        display: grid;
+        min-height: 100svh;
+        padding: 42px 28px 36px;
+        place-items: center;
+        isolation: isolate;
+      }
+
+      .hero::before {
+        position: absolute;
+        inset: 18px;
+        z-index: -1;
+        border: 1px solid rgba(105, 56, 62, 0.22);
+        border-radius: 210px 210px 18px 18px;
+        content: "";
+      }
+
+      .hero::after {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        width: 72px;
+        height: 72px;
+        border-top: 2px solid var(--gold);
+        border-right: 2px solid var(--gold);
+        border-radius: 0 210px 0 0;
+        content: "";
+        opacity: 0.7;
+      }
+
+      .hero__flower {
+        position: absolute;
+        z-index: -1;
+        width: 230px;
+        height: 230px;
+        color: var(--wine);
+        opacity: 0.12;
+      }
+
+      .hero__flower--top {
+        top: -72px;
+        left: -82px;
+        transform: rotate(18deg);
+      }
+
+      .hero__flower--bottom {
+        right: -90px;
+        bottom: -58px;
+        transform: rotate(195deg) scale(1.15);
+      }
+
+      .hero__content {
+        width: 100%;
+        text-align: center;
+      }
+
+      .eyebrow {
+        margin: 0 0 28px;
+        color: var(--gold);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 0.68rem;
+        font-weight: 600;
+        letter-spacing: 0.34em;
+      }
+
+      .hero__title {
+        margin: 0;
+        color: var(--wine-dark);
+        font-size: clamp(2.25rem, 10vw, 3.35rem);
+        font-weight: 400;
+        line-height: 1.28;
+        letter-spacing: -0.06em;
+      }
+
+      .hero__title span {
+        display: block;
+        margin-top: 5px;
+        font-size: 0.46em;
+        letter-spacing: 0.12em;
+      }
+
+      .hero__portrait {
+        position: relative;
+        width: min(100%, 365px);
+        margin: 28px auto 24px;
+        padding: 8px;
+        border: 1px solid rgba(169, 120, 70, 0.38);
+        border-radius: 190px 190px 20px 20px;
+        background: rgba(255, 253, 249, 0.88);
+        box-shadow: 0 22px 45px rgba(72, 35, 41, 0.17);
+      }
+
+      .hero__portrait::after {
+        position: absolute;
+        inset: 15px -7px -7px 15px;
+        z-index: -1;
+        border: 1px solid rgba(105, 56, 62, 0.18);
+        border-radius: inherit;
+        content: "";
+      }
+
+      .hero__portrait img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        border-radius: 180px 180px 13px 13px;
+        object-fit: cover;
+      }
+
+      .seal {
+        position: absolute;
+        right: -10px;
+        bottom: 24px;
+        z-index: 2;
+        display: grid;
+        width: 92px;
+        height: 92px;
+        margin: 0;
+        color: var(--white);
+        border-radius: 48% 52% 50% 46%;
+        background: var(--wine);
+        box-shadow:
+          inset 0 0 0 5px var(--wine),
+          inset 0 0 0 6px rgba(255, 253, 249, 0.5),
+          0 14px 32px rgba(72, 35, 41, 0.2);
+        place-items: center;
+        transform: rotate(-4deg);
+      }
+
+      .seal::before,
+      .seal::after {
+        position: absolute;
+        width: 9px;
+        height: 9px;
+        border: 1px solid rgba(255, 255, 255, 0.58);
+        content: "";
+        transform: rotate(45deg);
+      }
+
+      .seal::before {
+        top: 15px;
+        left: 18px;
+      }
+
+      .seal::after {
+        right: 17px;
+        bottom: 15px;
+      }
+
+      .seal__number {
+        display: block;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 2.55rem;
+        line-height: 0.82;
+        letter-spacing: -0.08em;
+      }
+
+      .seal__label {
+        display: block;
+        margin-top: 6px;
+        font-size: 0.58rem;
+        letter-spacing: 0.28em;
+        text-indent: 0.28em;
+      }
+
+      .hero__name {
+        margin: 0;
+        color: var(--ink);
+        font-size: 1.08rem;
+        letter-spacing: 0.08em;
+      }
+
+      .hero__name strong {
+        color: var(--wine-dark);
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+
+      .hero__date {
+        margin: 12px 0 0;
+        color: var(--muted);
+        font-size: 0.84rem;
+        letter-spacing: 0.06em;
+      }
+
+      .scroll-mark {
+        position: absolute;
+        bottom: 32px;
+        left: 50%;
+        display: grid;
+        width: 26px;
+        height: 42px;
+        border: 1px solid rgba(105, 56, 62, 0.35);
+        border-radius: 20px;
+        place-items: start center;
+        transform: translateX(-50%);
+      }
+
+      .scroll-mark::after {
+        width: 3px;
+        height: 7px;
+        margin-top: 8px;
+        border-radius: 10px;
+        background: var(--wine);
+        content: "";
+        animation: scroll 1.8s ease-in-out infinite;
+      }
+
+      @keyframes scroll {
+        0%,
+        100% {
+          opacity: 0.2;
+          transform: translateY(0);
+        }
+        50% {
+          opacity: 1;
+          transform: translateY(15px);
+        }
+      }
+
+      section {
+        position: relative;
+        padding: 92px 34px;
+      }
+
+      .section-label {
+        margin: 0 0 24px;
+        color: var(--gold);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 0.66rem;
+        font-weight: 600;
+        letter-spacing: 0.3em;
+        text-align: center;
+      }
+
+      .section-title {
+        margin: 0;
+        color: var(--wine-dark);
+        font-size: clamp(1.55rem, 6vw, 2rem);
+        font-weight: 400;
+        line-height: 1.6;
+        letter-spacing: -0.04em;
+        text-align: center;
+      }
+
+      .divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: 28px auto;
+        color: var(--gold);
+      }
+
+      .divider::before,
+      .divider::after {
+        width: 38px;
+        height: 1px;
+        background: var(--gold-light);
+        content: "";
+      }
+
+      .divider span {
+        width: 6px;
+        height: 6px;
+        border: 1px solid currentColor;
+        transform: rotate(45deg);
+      }
+
+      .invitation {
+        background: var(--white);
+      }
+
+      .invitation::before {
+        position: absolute;
+        top: -1px;
+        right: 0;
+        left: 0;
+        height: 55px;
+        background: var(--paper);
+        clip-path: ellipse(58% 42% at 50% 0%);
+        content: "";
+      }
+
+      .message {
+        margin: 0 auto;
+        color: #5c514d;
+        font-size: 0.98rem;
+        line-height: 2.15;
+        text-align: center;
+      }
+
+      .message p {
+        margin: 0;
+      }
+
+      .message p + p {
+        margin-top: 14px;
+      }
+
+      .signature {
+        margin: 34px 0 0;
+        color: var(--wine-dark);
+        font-size: 0.9rem;
+        letter-spacing: 0.04em;
+        text-align: center;
+      }
+
+      .details {
+        background:
+          linear-gradient(rgba(248, 243, 235, 0.92), rgba(248, 243, 235, 0.92)),
+          repeating-linear-gradient(
+            0deg,
+            transparent 0,
+            transparent 23px,
+            rgba(105, 56, 62, 0.05) 24px
+          );
+      }
+
+      .detail-card {
+        position: relative;
+        margin-top: 38px;
+        padding: 14px 26px;
+        border: 1px solid var(--line);
+        border-radius: 999px 999px 20px 20px;
+        background: rgba(255, 253, 249, 0.72);
+        box-shadow: 0 20px 45px rgba(72, 35, 41, 0.08);
+      }
+
+      .detail-card::before {
+        display: block;
+        width: 52px;
+        height: 3px;
+        margin: 26px auto 20px;
+        border-radius: 10px;
+        background: var(--wine);
+        content: "";
+        opacity: 0.72;
+      }
+
+      .detail-row {
+        display: grid;
+        grid-template-columns: 58px 1fr;
+        gap: 18px;
+        padding: 19px 4px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .detail-row:last-child {
+        border-bottom: 0;
+      }
+
+      .detail-row dt {
+        color: var(--gold);
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+      }
+
+      .detail-row dd {
+        margin: 0;
+        color: var(--ink);
+        font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+        font-size: 0.91rem;
+        line-height: 1.7;
+      }
+
+      .detail-row dd small {
+        display: block;
+        margin-top: 4px;
+        color: var(--muted);
+        font-size: 0.76rem;
+      }
+
+      .countdown {
+        display: none;
+        margin: 30px 0 0;
+        color: var(--wine-dark);
+        font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+        font-size: 0.82rem;
+        text-align: center;
+      }
+
+      .countdown.is-visible {
+        display: block;
+      }
+
+      .countdown strong {
+        color: var(--wine);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 1.15rem;
+      }
+
+      .gallery {
+        overflow: hidden;
+        padding-right: 0;
+        padding-left: 0;
+        color: var(--white);
+        background:
+          radial-gradient(circle at 85% 5%, rgba(217, 191, 156, 0.14), transparent 18rem),
+          var(--wine-dark);
+      }
+
+      .gallery .section-label {
+        color: var(--gold-light);
+      }
+
+      .gallery .section-title {
+        color: var(--white);
+      }
+
+      .gallery__intro {
+        margin: 14px 34px 0;
+        color: rgba(255, 253, 249, 0.62);
+        font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+        font-size: 0.78rem;
+        line-height: 1.7;
+        text-align: center;
+      }
+
+      .gallery__shell {
+        position: relative;
+        margin-top: 36px;
+      }
+
+      .gallery__track {
+        display: flex;
+        gap: 14px;
+        overflow-x: auto;
+        padding: 0 34px 8px;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        overscroll-behavior-x: contain;
+      }
+
+      .gallery__track::-webkit-scrollbar {
+        display: none;
+      }
+
+      .gallery__slide {
+        flex: 0 0 calc(100% - 76px);
+        min-width: 0;
+        margin: 0;
+        overflow: hidden;
+        border: 1px solid rgba(255, 253, 249, 0.17);
+        border-radius: 20px;
+        background: #271a1d;
+        box-shadow: 0 20px 48px rgba(0, 0, 0, 0.26);
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+      }
+
+      .gallery__media {
+        position: relative;
+        aspect-ratio: 4 / 5;
+        overflow: hidden;
+        background: #2c2323;
+      }
+
+      .gallery__backdrop,
+      .gallery__photo {
+        position: absolute;
+        display: block;
+      }
+
+      .gallery__backdrop {
+        inset: -32px;
+        width: calc(100% + 64px);
+        height: calc(100% + 64px);
+        filter: blur(28px) brightness(0.48) saturate(0.85);
+        object-fit: cover;
+        transform: scale(1.08);
+      }
+
+      .gallery__photo {
+        inset: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .gallery__caption {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        min-height: 58px;
+        padding: 15px 18px;
+        color: rgba(255, 253, 249, 0.88);
+        font-size: 0.82rem;
+      }
+
+      .gallery__caption small {
+        flex: none;
+        color: var(--gold-light);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 0.67rem;
+        letter-spacing: 0.1em;
+      }
+
+      .gallery__arrow {
+        position: absolute;
+        top: calc(50% - 29px);
+        z-index: 3;
+        display: grid;
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        color: var(--wine-dark);
+        border: 0;
+        border-radius: 50%;
+        background: rgba(255, 253, 249, 0.9);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+        cursor: pointer;
+        place-items: center;
+        transition: 180ms ease;
+      }
+
+      .gallery__arrow:hover,
+      .gallery__arrow:focus-visible {
+        outline: 2px solid var(--gold-light);
+        outline-offset: 2px;
+        transform: scale(1.06);
+      }
+
+      .gallery__arrow--prev {
+        left: 13px;
+      }
+
+      .gallery__arrow--next {
+        right: 13px;
+      }
+
+      .gallery__dots {
+        display: flex;
+        min-height: 22px;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 18px;
+      }
+
+      .gallery__dot {
+        width: 6px;
+        height: 6px;
+        padding: 0;
+        border: 0;
+        border-radius: 999px;
+        background: rgba(255, 253, 249, 0.35);
+        cursor: pointer;
+        transition: 220ms ease;
+      }
+
+      .gallery__dot[aria-current="true"] {
+        width: 22px;
+        background: var(--gold-light);
+      }
+
+      .gallery__hint {
+        margin: 8px 0 0;
+        color: rgba(255, 253, 249, 0.45);
+        font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+        font-size: 0.67rem;
+        text-align: center;
+      }
+
+      .location {
+        background: var(--white);
+      }
+
+      .location-card {
+        margin-top: 36px;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: var(--paper);
+      }
+
+      .map-art {
+        position: relative;
+        display: grid;
+        min-height: 205px;
+        overflow: hidden;
+        background:
+          linear-gradient(35deg, transparent 47%, rgba(105, 56, 62, 0.08) 48%, rgba(105, 56, 62, 0.08) 51%, transparent 52%),
+          linear-gradient(-28deg, transparent 45%, rgba(169, 120, 70, 0.1) 46%, rgba(169, 120, 70, 0.1) 49%, transparent 50%),
+          #efe7da;
+        place-items: center;
+      }
+
+      .map-art::before,
+      .map-art::after {
+        position: absolute;
+        width: 250px;
+        height: 46px;
+        border: 12px solid rgba(255, 253, 249, 0.62);
+        border-right: 0;
+        border-left: 0;
+        content: "";
+      }
+
+      .map-art::before {
+        top: 25px;
+        left: -45px;
+        transform: rotate(-22deg);
+      }
+
+      .map-art::after {
+        right: -52px;
+        bottom: 18px;
+        transform: rotate(34deg);
+      }
+
+      .pin {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        width: 54px;
+        height: 54px;
+        color: var(--white);
+        border-radius: 50% 50% 50% 4px;
+        background: var(--wine);
+        box-shadow: 0 12px 24px rgba(72, 35, 41, 0.25);
+        place-items: center;
+        transform: rotate(-45deg);
+      }
+
+      .pin span {
+        width: 15px;
+        height: 15px;
+        border: 2px solid currentColor;
+        border-radius: 50%;
+        transform: rotate(45deg);
+      }
+
+      .location-info {
+        padding: 24px;
+        text-align: center;
+      }
+
+      .location-info strong {
+        display: block;
+        color: var(--wine-dark);
+        font-size: 1.06rem;
+        font-weight: 600;
+      }
+
+      .location-info address {
+        margin-top: 9px;
+        color: var(--muted);
+        font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+        font-size: 0.78rem;
+        font-style: normal;
+        line-height: 1.7;
+      }
+
+      .button-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .button {
+        display: inline-flex;
+        min-height: 46px;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        padding: 11px 16px;
+        border: 1px solid var(--line);
+        border-radius: 9px;
+        color: var(--wine-dark);
+        background: var(--white);
+        font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+        font-size: 0.78rem;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 180ms ease;
+      }
+
+      .button:hover,
+      .button:focus-visible {
+        border-color: var(--wine);
+        outline: none;
+        transform: translateY(-2px);
+      }
+
+      .button[aria-disabled="true"] {
+        cursor: default;
+        opacity: 0.45;
+        pointer-events: none;
+      }
+
+      .closing {
+        padding-top: 102px;
+        padding-bottom: 104px;
+        color: var(--white);
+        background: var(--wine-dark);
+        text-align: center;
+      }
+
+      .closing::before {
+        position: absolute;
+        top: -1px;
+        right: 0;
+        left: 0;
+        height: 52px;
+        background: var(--white);
+        clip-path: ellipse(58% 42% at 50% 0%);
+        content: "";
+      }
+
+      .closing__flower {
+        width: 62px;
+        height: 62px;
+        margin-bottom: 24px;
+        color: var(--gold-light);
+        opacity: 0.8;
+      }
+
+      .closing p {
+        margin: 0;
+        font-size: 1.12rem;
+        line-height: 1.9;
+        letter-spacing: -0.025em;
+      }
+
+      .closing small {
+        display: block;
+        margin-top: 13px;
+        color: rgba(255, 253, 249, 0.64);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 0.62rem;
+        letter-spacing: 0.23em;
+      }
+
+      .share-button {
+        width: min(100%, 290px);
+        margin-top: 34px;
+        color: var(--white);
+        border-color: rgba(255, 253, 249, 0.3);
+        background: transparent;
+      }
+
+      .share-button:hover,
+      .share-button:focus-visible {
+        border-color: var(--white);
+      }
+
+      .toast {
+        position: fixed;
+        right: 50%;
+        bottom: 24px;
+        z-index: 30;
+        width: max-content;
+        max-width: calc(100% - 40px);
+        padding: 12px 18px;
+        color: var(--white);
+        border-radius: 999px;
+        background: rgba(48, 41, 39, 0.92);
+        font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+        font-size: 0.76rem;
+        opacity: 0;
+        pointer-events: none;
+        transform: translate(50%, 18px);
+        transition: 240ms ease;
+      }
+
+      .toast.is-visible {
+        opacity: 1;
+        transform: translate(50%, 0);
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(22px);
+        transition:
+          opacity 800ms ease,
+          transform 800ms cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (max-width: 370px) {
+        .hero {
+          padding-right: 22px;
+          padding-left: 22px;
+        }
+
+        section {
+          padding-right: 25px;
+          padding-left: 25px;
+        }
+
+        .detail-card {
+          padding-right: 18px;
+          padding-left: 18px;
+        }
+
+        .gallery__track {
+          padding-right: 25px;
+          padding-left: 25px;
+        }
+
+        .gallery__slide {
+          flex-basis: calc(100% - 56px);
+        }
+      }
+
+      @media (min-width: 700px) {
+        body {
+          padding: 36px 0;
+        }
+
+        .page {
+          min-height: calc(100vh - 72px);
+          border-radius: 3px;
+        }
+
+        .hero {
+          min-height: calc(100vh - 72px);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+
+        .reveal {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="page">
+      <div class="grain" aria-hidden="true"></div>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <svg class="hero__flower hero__flower--top" viewBox="0 0 200 200" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-width="1.3">
+            <path d="M103 105C49 100 39 54 83 62c-2-42 49-39 46 4 36-25 64 19 27 42 36 28-1 67-33 36-13 43-60 27-47-13-44 7-49-40-7-48 0 0 32-26 34-37 4-23 3-39 4-55" />
+            <path d="M103 105c-27-8-36-28-20-43 4 22 14 34 20 43Zm0 0c-3-28 8-44 26-39-14 16-21 30-26 39Zm0 0c23-16 43-13 53 3-22-2-38-1-53-3Zm0 0c21 18 22 39 7 51-2-22-3-38-7-51Zm0 0c-16 23-37 27-51 14 21-6 37-11 51-14Z" />
+            <circle cx="103" cy="105" r="8" />
+          </g>
+        </svg>
+        <svg class="hero__flower hero__flower--bottom" viewBox="0 0 200 200" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-width="1.3">
+            <path d="M103 105C49 100 39 54 83 62c-2-42 49-39 46 4 36-25 64 19 27 42 36 28-1 67-33 36-13 43-60 27-47-13-44 7-49-40-7-48 0 0 32-26 34-37 4-23 3-39 4-55" />
+            <path d="M103 105c-27-8-36-28-20-43 4 22 14 34 20 43Zm0 0c-3-28 8-44 26-39-14 16-21 30-26 39Zm0 0c23-16 43-13 53 3-22-2-38-1-53-3Zm0 0c21 18 22 39 7 51-2-22-3-38-7-51Zm0 0c-16 23-37 27-51 14 21-6 37-11 51-14Z" />
+            <circle cx="103" cy="105" r="8" />
+          </g>
+        </svg>
+
+        <div class="hero__content reveal">
+          <p class="eyebrow">SIXTIETH BIRTHDAY</p>
+          <h1 class="hero__title" id="hero-title">
+            빛나는 예순
+            <span>함께 축하해 주세요</span>
+          </h1>
+
+          <div class="hero__portrait">
+            <img
+              src="./img/web/hero-main.jpg"
+              alt="한복을 입고 환하게 미소 짓는 임호성 님"
+              width="1200"
+              height="1500"
+              fetchpriority="high"
+            />
+            <div class="seal" aria-label="환갑, 예순 살">
+              <div>
+                <span class="seal__number">60</span>
+                <span class="seal__label">환갑</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="hero__name">
+            사랑하는 <span data-field="relationship">어머니</span>,
+            <strong data-field="honoree">임호성</strong> 님
+          </p>
+          <p class="hero__date" data-field="date">2026년 8월 22일 토요일</p>
+        </div>
+
+        <span class="scroll-mark" aria-hidden="true"></span>
+      </section>
+
+      <section class="invitation" aria-labelledby="invitation-title">
+        <div class="reveal">
+          <p class="section-label">INVITATION</p>
+          <h2 class="section-title" id="invitation-title">
+            소중한 분들을<br />기쁜 자리에 초대합니다
+          </h2>
+          <div class="divider" aria-hidden="true"><span></span></div>
+          <div class="message" id="message">
+            <p>
+              한결같은 사랑으로<br />우리 가족의 든든한 품이 되어주신 어머니께서<br />예순 번째 생일을 맞으셨습니다.
+            </p>
+            <p>
+              감사와 사랑을 담아 작은 자리를 마련하오니<br />귀한 걸음 하시어 함께 축복해 주세요.
+            </p>
+          </div>
+          <p class="signature" data-field="host">사랑하는 가족 일동 올림</p>
+        </div>
+      </section>
+
+      <section class="gallery" aria-labelledby="gallery-title">
+        <div class="reveal">
+          <p class="section-label">OUR MOMENTS</p>
+          <h2 class="section-title" id="gallery-title">함께여서 빛났던 순간들</h2>
+          <p class="gallery__intro">사진을 좌우로 밀어 가족의 추억을 만나보세요.</p>
+
+          <div class="gallery__shell">
+            <div class="gallery__track" id="gallery-track" tabindex="0" aria-label="가족사진 갤러리">
+              <figure class="gallery__slide">
+                <div class="gallery__media">
+                  <img
+                    class="gallery__backdrop"
+                    src="./img/web/KakaoTalk_20260818_133317618.jpg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <img
+                    class="gallery__photo"
+                    src="./img/web/KakaoTalk_20260818_133317618.jpg"
+                    alt="전망대 창가에 앉아 있는 임호성 님"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption class="gallery__caption">
+                  <span>어느 날의 환한 미소</span><small>01 / 04</small>
+                </figcaption>
+              </figure>
+
+              <figure class="gallery__slide">
+                <div class="gallery__media">
+                  <img
+                    class="gallery__backdrop"
+                    src="./img/web/KakaoTalk_20260818_133442032.jpg"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    class="gallery__photo"
+                    src="./img/web/KakaoTalk_20260818_133442032.jpg"
+                    alt="붉은 벽돌 회랑에서 미소 짓는 임호성 님"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption class="gallery__caption">
+                  <span>함께 걸어온 시간</span><small>02 / 04</small>
+                </figcaption>
+              </figure>
+
+              <figure class="gallery__slide">
+                <div class="gallery__media">
+                  <img
+                    class="gallery__backdrop"
+                    src="./img/web/KakaoTalk_20260818_133505899.jpg"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    class="gallery__photo"
+                    src="./img/web/KakaoTalk_20260818_133505899.jpg"
+                    alt="여행지에서 함께 찍은 가족사진"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption class="gallery__caption">
+                  <span>가족이라는 이름으로</span><small>03 / 04</small>
+                </figcaption>
+              </figure>
+
+              <figure class="gallery__slide">
+                <div class="gallery__media">
+                  <img
+                    class="gallery__backdrop"
+                    src="./img/web/KakaoTalk_20260818_133615500.jpg"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />
+                  <img
+                    class="gallery__photo"
+                    src="./img/web/KakaoTalk_20260818_133615500.jpg"
+                    alt="가족과 함께 하트를 그리며 찍은 사진"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption class="gallery__caption">
+                  <span>사랑으로 채운 순간들</span><small>04 / 04</small>
+                </figcaption>
+              </figure>
+            </div>
+
+            <button class="gallery__arrow gallery__arrow--prev" id="gallery-prev" type="button" aria-label="이전 사진">&#10094;</button>
+            <button class="gallery__arrow gallery__arrow--next" id="gallery-next" type="button" aria-label="다음 사진">&#10095;</button>
+          </div>
+
+          <div class="gallery__dots" id="gallery-dots" aria-label="사진 선택"></div>
+          <p class="gallery__hint" id="gallery-status" aria-live="polite">1번째 사진 / 전체 4장</p>
+        </div>
+      </section>
+
+      <section class="details" aria-labelledby="details-title">
+        <div class="reveal">
+          <p class="section-label">THE DAY</p>
+          <h2 class="section-title" id="details-title">함께하는 날</h2>
+
+          <dl class="detail-card">
+            <div class="detail-row">
+              <dt>일시</dt>
+              <dd>
+                <span data-field="date">2026년 8월 22일 토요일</span>
+                <small data-field="time">오후 5시 30분</small>
+              </dd>
+            </div>
+            <div class="detail-row">
+              <dt>장소</dt>
+              <dd>
+                <span data-field="venue">하인선생 일산점</span>
+                <small data-field="venueDetail"></small>
+              </dd>
+            </div>
+            <div class="detail-row">
+              <dt>주인공</dt>
+              <dd>
+                <span><span data-field="relationship">어머니</span> <span data-field="honoree">임호성</span> 님</span>
+                <small>예순 번째 생일을 축하합니다</small>
+              </dd>
+            </div>
+          </dl>
+
+          <p class="countdown" id="countdown" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="location" aria-labelledby="location-title">
+        <div class="reveal">
+          <p class="section-label">LOCATION</p>
+          <h2 class="section-title" id="location-title">오시는 길</h2>
+
+          <div class="location-card">
+            <div class="map-art" aria-hidden="true">
+              <div class="pin"><span></span></div>
+            </div>
+            <div class="location-info">
+              <strong data-field="venue">하인선생 일산점</strong>
+              <address data-field="address">경기 고양시 일산동구 무궁화로 359</address>
+              <div class="button-row">
+                <button class="button" id="copy-address" type="button">주소 복사</button>
+                <a class="button" id="open-map" href="#" target="_blank" rel="noopener noreferrer">네이버 지도</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing" aria-label="마치는 글">
+        <div class="reveal">
+          <svg class="closing__flower" viewBox="0 0 64 64" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M32 31C12 31 9 14 25 17c-1-15 17-14 16 1 13-9 23 7 9 15 13 10 0 24-12 13-4 15-22 9-17-5-16 3-18-14-3-18 0 0 11-9 11-14 1-8 1-14 2-20" />
+              <circle cx="32" cy="31" r="3" />
+            </g>
+          </svg>
+          <p>함께해 주시는 시간이<br />가장 큰 선물입니다.</p>
+          <small>THANK YOU FOR CELEBRATING WITH US</small>
+          <button class="button share-button" id="share" type="button">초대장 공유하기</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script>
+      /*
+       * 초대장 정보는 아래 값만 수정하면 됩니다.
+       * eventDate에는 D-day 계산을 위해 시간대까지 포함한 값을 넣어 주세요.
+       * 예: "2026-10-17T18:00:00+09:00"
+       */
+      const invitation = {
+        honoree: "임호성",
+        relationship: "어머니",
+        date: "2026년 8월 22일 토요일",
+        time: "오후 5시 30분",
+        eventDate: "2026-08-22T17:30:00+09:00",
+        venue: "하인선생 일산점",
+        venueDetail: "",
+        address: "경기 고양시 일산동구 무궁화로 359",
+        mapUrl: "https://naver.me/xSFaQkCC",
+        host: "사랑하는 가족 일동 올림",
+        message: [
+          "한결같은 사랑으로<br>우리 가족의 든든한 품이 되어주신 어머니께서<br>예순 번째 생일을 맞으셨습니다.",
+          "감사와 사랑을 담아 작은 자리를 마련하오니<br>귀한 걸음 하시어 함께 축복해 주세요."
+        ]
+      };
+
+      document.querySelectorAll("[data-field]").forEach((element) => {
+        const key = element.dataset.field;
+        element.textContent = invitation[key] ?? "";
+      });
+
+      const message = document.querySelector("#message");
+      message.replaceChildren(
+        ...invitation.message.map((text) => {
+          const paragraph = document.createElement("p");
+          paragraph.innerHTML = text;
+          return paragraph;
+        })
+      );
+
+      const mapButton = document.querySelector("#open-map");
+      if (invitation.mapUrl) {
+        mapButton.href = invitation.mapUrl;
+      } else {
+        mapButton.setAttribute("aria-disabled", "true");
+        mapButton.removeAttribute("href");
+      }
+
+      const toast = document.querySelector("#toast");
+      let toastTimer;
+
+      function showToast(text) {
+        window.clearTimeout(toastTimer);
+        toast.textContent = text;
+        toast.classList.add("is-visible");
+        toastTimer = window.setTimeout(() => toast.classList.remove("is-visible"), 2200);
+      }
+
+      document.querySelector("#copy-address").addEventListener("click", async () => {
+        if (!invitation.address || invitation.address === "주소 미정") {
+          showToast("주소가 아직 등록되지 않았습니다.");
+          return;
+        }
+
+        try {
+          await navigator.clipboard.writeText(invitation.address);
+          showToast("주소를 복사했습니다.");
+        } catch {
+          showToast("주소 복사에 실패했습니다.");
+        }
+      });
+
+      document.querySelector("#share").addEventListener("click", async () => {
+        const shareData = {
+          title: `${invitation.honoree} 님의 환갑 초대장`,
+          text: `${invitation.date} ${invitation.time} · ${invitation.venue}`,
+          url: window.location.href
+        };
+
+        if (navigator.share) {
+          try {
+            await navigator.share(shareData);
+          } catch (error) {
+            if (error.name !== "AbortError") showToast("공유에 실패했습니다.");
+          }
+          return;
+        }
+
+        try {
+          await navigator.clipboard.writeText(window.location.href);
+          showToast("초대장 주소를 복사했습니다.");
+        } catch {
+          showToast("주소 복사에 실패했습니다.");
+        }
+      });
+
+      const galleryTrack = document.querySelector("#gallery-track");
+      const gallerySlides = [...document.querySelectorAll(".gallery__slide")];
+      const galleryDots = document.querySelector("#gallery-dots");
+      const galleryStatus = document.querySelector("#gallery-status");
+      let currentSlide = 0;
+      let galleryFrame;
+
+      function moveToSlide(index, behavior = "smooth") {
+        currentSlide = (index + gallerySlides.length) % gallerySlides.length;
+        const slide = gallerySlides[currentSlide];
+        const left = slide.offsetLeft - (galleryTrack.clientWidth - slide.clientWidth) / 2;
+        galleryTrack.scrollTo({ left, behavior });
+        updateGalleryState();
+      }
+
+      function updateGalleryState() {
+        document.querySelectorAll(".gallery__dot").forEach((dot, index) => {
+          dot.setAttribute("aria-current", String(index === currentSlide));
+        });
+        galleryStatus.textContent = `${currentSlide + 1}번째 사진 / 전체 ${gallerySlides.length}장`;
+      }
+
+      gallerySlides.forEach((_, index) => {
+        const dot = document.createElement("button");
+        dot.className = "gallery__dot";
+        dot.type = "button";
+        dot.setAttribute("aria-label", `${index + 1}번째 사진 보기`);
+        dot.addEventListener("click", () => moveToSlide(index));
+        galleryDots.append(dot);
+      });
+
+      document.querySelector("#gallery-prev").addEventListener("click", () => {
+        moveToSlide(currentSlide - 1);
+      });
+
+      document.querySelector("#gallery-next").addEventListener("click", () => {
+        moveToSlide(currentSlide + 1);
+      });
+
+      galleryTrack.addEventListener(
+        "scroll",
+        () => {
+          window.cancelAnimationFrame(galleryFrame);
+          galleryFrame = window.requestAnimationFrame(() => {
+            const center = galleryTrack.scrollLeft + galleryTrack.clientWidth / 2;
+            currentSlide = gallerySlides.reduce((closestIndex, slide, index) => {
+              const slideCenter = slide.offsetLeft + slide.clientWidth / 2;
+              const closestSlide = gallerySlides[closestIndex];
+              const closestCenter = closestSlide.offsetLeft + closestSlide.clientWidth / 2;
+              return Math.abs(slideCenter - center) < Math.abs(closestCenter - center)
+                ? index
+                : closestIndex;
+            }, 0);
+            updateGalleryState();
+          });
+        },
+        { passive: true }
+      );
+
+      galleryTrack.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") {
+          event.preventDefault();
+          moveToSlide(currentSlide - 1);
+        }
+        if (event.key === "ArrowRight") {
+          event.preventDefault();
+          moveToSlide(currentSlide + 1);
+        }
+      });
+
+      updateGalleryState();
+
+      if (invitation.eventDate) {
+        const eventTime = new Date(invitation.eventDate).getTime();
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const eventDay = new Date(eventTime);
+        eventDay.setHours(0, 0, 0, 0);
+        const days = Math.ceil((eventDay - today) / 86400000);
+        const countdown = document.querySelector("#countdown");
+
+        if (Number.isFinite(days)) {
+          countdown.classList.add("is-visible");
+          countdown.innerHTML =
+            days > 0
+              ? `어머니의 빛나는 날까지 <strong>D-${days}</strong>`
+              : days === 0
+                ? "오늘, 기쁜 마음으로 만나요."
+                : "함께 축하해 주셔서 감사합니다.";
+        }
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.14 }
+      );
+
+      document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
+    </script>
+  </body>
+</html>
