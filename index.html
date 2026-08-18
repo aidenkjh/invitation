@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f5efe7" />
+    <meta name="theme-color" content="#fbf8f1" />
     <meta name="robots" content="noindex, nofollow, noarchive" />
     <meta
       name="description"
@@ -36,17 +36,17 @@
 
     <style>
       :root {
-        --paper: #f8f3eb;
-        --paper-deep: #eee3d5;
-        --wine: #69383e;
-        --wine-dark: #482329;
-        --gold: #a97846;
-        --gold-light: #d9bf9c;
-        --ink: #302927;
-        --muted: #776c67;
-        --line: rgba(105, 56, 62, 0.17);
-        --white: #fffdf9;
-        --shadow: 0 24px 70px rgba(72, 35, 41, 0.13);
+        --paper: #fbf8f2;
+        --paper-deep: #f1ecdf;
+        --wine: #8d9c7d;
+        --wine-dark: #5f6d58;
+        --gold: #b18e59;
+        --gold-light: #dfcca8;
+        --ink: #3a3832;
+        --muted: #7b776e;
+        --line: rgba(112, 126, 98, 0.2);
+        --white: #fffefa;
+        --shadow: 0 24px 70px rgba(79, 87, 71, 0.11);
       }
 
       * {
@@ -61,8 +61,8 @@
         margin: 0;
         color: var(--ink);
         background:
-          radial-gradient(circle at 15% 5%, rgba(169, 120, 70, 0.1), transparent 24rem),
-          radial-gradient(circle at 90% 35%, rgba(105, 56, 62, 0.08), transparent 25rem),
+          radial-gradient(circle at 15% 5%, rgba(177, 142, 89, 0.09), transparent 24rem),
+          radial-gradient(circle at 90% 35%, rgba(141, 156, 125, 0.1), transparent 25rem),
           var(--paper-deep);
         font-family: "Noto Serif KR", "Nanum Myeongjo", "Batang", serif;
         word-break: keep-all;
@@ -111,7 +111,7 @@
         position: absolute;
         inset: 18px;
         z-index: -1;
-        border: 1px solid rgba(105, 56, 62, 0.22);
+        border: 1px solid rgba(112, 126, 98, 0.24);
         border-radius: 210px 210px 18px 18px;
         content: "";
       }
@@ -185,17 +185,17 @@
         width: min(100%, 365px);
         margin: 28px auto 24px;
         padding: 8px;
-        border: 1px solid rgba(169, 120, 70, 0.38);
+        border: 1px solid rgba(177, 142, 89, 0.38);
         border-radius: 190px 190px 20px 20px;
         background: rgba(255, 253, 249, 0.88);
-        box-shadow: 0 22px 45px rgba(72, 35, 41, 0.17);
+        box-shadow: 0 22px 45px rgba(79, 87, 71, 0.14);
       }
 
       .hero__portrait::after {
         position: absolute;
         inset: 15px -7px -7px 15px;
         z-index: -1;
-        border: 1px solid rgba(105, 56, 62, 0.18);
+        border: 1px solid rgba(112, 126, 98, 0.2);
         border-radius: inherit;
         content: "";
       }
@@ -224,7 +224,7 @@
         box-shadow:
           inset 0 0 0 5px var(--wine),
           inset 0 0 0 6px rgba(255, 253, 249, 0.5),
-          0 14px 32px rgba(72, 35, 41, 0.2);
+          0 14px 32px rgba(79, 87, 71, 0.18);
         place-items: center;
         transform: rotate(-4deg);
       }
@@ -292,7 +292,7 @@
         display: grid;
         width: 26px;
         height: 42px;
-        border: 1px solid rgba(105, 56, 62, 0.35);
+        border: 1px solid rgba(112, 126, 98, 0.36);
         border-radius: 20px;
         place-items: start center;
         transform: translateX(-50%);
@@ -386,7 +386,7 @@
 
       .message {
         margin: 0 auto;
-        color: #5c514d;
+        color: #615f57;
         font-size: 0.98rem;
         line-height: 2.15;
         text-align: center;
@@ -410,12 +410,12 @@
 
       .details {
         background:
-          linear-gradient(rgba(248, 243, 235, 0.92), rgba(248, 243, 235, 0.92)),
+          linear-gradient(rgba(251, 248, 242, 0.94), rgba(251, 248, 242, 0.94)),
           repeating-linear-gradient(
             0deg,
             transparent 0,
             transparent 23px,
-            rgba(105, 56, 62, 0.05) 24px
+            rgba(112, 126, 98, 0.055) 24px
           );
       }
 
@@ -426,7 +426,7 @@
         border: 1px solid var(--line);
         border-radius: 999px 999px 20px 20px;
         background: rgba(255, 253, 249, 0.72);
-        box-shadow: 0 20px 45px rgba(72, 35, 41, 0.08);
+        box-shadow: 0 20px 45px rgba(79, 87, 71, 0.075);
       }
 
       .detail-card::before {
@@ -497,179 +497,274 @@
         font-size: 1.15rem;
       }
 
+      .event-calendar {
+        max-width: 380px;
+        margin: 34px auto 0;
+        padding: 28px 20px 22px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: rgba(255, 253, 249, 0.78);
+        box-shadow: 0 18px 42px rgba(79, 87, 71, 0.07);
+      }
+
+      .event-calendar__heading {
+        margin-bottom: 24px;
+        text-align: center;
+      }
+
+      .event-calendar__heading strong {
+        display: block;
+        color: var(--wine-dark);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 1.45rem;
+        font-weight: 400;
+        letter-spacing: 0.08em;
+      }
+
+      .event-calendar__heading span {
+        display: block;
+        margin-top: 5px;
+        color: var(--gold);
+        font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+        font-size: 0.68rem;
+        font-weight: 600;
+        letter-spacing: 0.16em;
+      }
+
+      .event-calendar__weekdays,
+      .event-calendar__days {
+        display: grid;
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+        text-align: center;
+      }
+
+      .event-calendar__weekdays {
+        margin-bottom: 10px;
+        color: var(--muted);
+        font-size: 0.64rem;
+        font-weight: 600;
+      }
+
+      .event-calendar__weekdays span:first-child,
+      .event-calendar__day--sunday {
+        color: var(--wine);
+      }
+
+      .event-calendar__weekdays span:last-child,
+      .event-calendar__day--saturday {
+        color: #66748c;
+      }
+
+      .event-calendar__day {
+        display: grid;
+        min-height: 39px;
+        place-items: center;
+        color: var(--ink);
+        font-size: 0.76rem;
+      }
+
+      .event-calendar__day time {
+        display: grid;
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        place-items: center;
+      }
+
+      .event-calendar__day time[aria-current="date"] {
+        position: relative;
+        color: var(--white);
+        background: var(--wine);
+        box-shadow: 0 7px 18px rgba(79, 87, 71, 0.22);
+        font-weight: 700;
+      }
+
+      .event-calendar__day time[aria-current="date"]::after {
+        position: absolute;
+        bottom: -7px;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background: var(--gold);
+        content: "";
+      }
+
+      .event-calendar__schedule {
+        margin: 20px 0 0;
+        color: var(--wine-dark);
+        font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+        font-size: 0.76rem;
+        font-weight: 600;
+        text-align: center;
+      }
+
       .gallery {
         overflow: hidden;
         padding-right: 0;
         padding-left: 0;
-        color: var(--white);
-        background:
-          radial-gradient(circle at 85% 5%, rgba(217, 191, 156, 0.14), transparent 18rem),
-          var(--wine-dark);
+        background: var(--white);
       }
 
       .gallery .section-label {
-        color: var(--gold-light);
+        color: var(--gold);
       }
 
       .gallery .section-title {
-        color: var(--white);
+        color: var(--wine-dark);
       }
 
-      .gallery__intro {
-        margin: 14px 34px 0;
-        color: rgba(255, 253, 249, 0.62);
-        font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
-        font-size: 0.78rem;
-        line-height: 1.7;
-        text-align: center;
+      .gallery__grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2px;
+        margin-top: 38px;
+        background: var(--white);
       }
 
-      .gallery__shell {
+      .gallery__item {
         position: relative;
-        margin-top: 36px;
-      }
-
-      .gallery__track {
-        display: flex;
-        gap: 14px;
-        overflow-x: auto;
-        padding: 0 34px 8px;
-        scroll-behavior: smooth;
-        scroll-snap-type: x mandatory;
-        scrollbar-width: none;
-        overscroll-behavior-x: contain;
-      }
-
-      .gallery__track::-webkit-scrollbar {
-        display: none;
-      }
-
-      .gallery__slide {
-        flex: 0 0 calc(100% - 76px);
-        min-width: 0;
-        margin: 0;
-        overflow: hidden;
-        border: 1px solid rgba(255, 253, 249, 0.17);
-        border-radius: 20px;
-        background: #271a1d;
-        box-shadow: 0 20px 48px rgba(0, 0, 0, 0.26);
-        scroll-snap-align: center;
-        scroll-snap-stop: always;
-      }
-
-      .gallery__media {
-        position: relative;
-        aspect-ratio: 4 / 5;
-        overflow: hidden;
-        background: #2c2323;
-      }
-
-      .gallery__backdrop,
-      .gallery__photo {
-        position: absolute;
         display: block;
+        width: 100%;
+        aspect-ratio: 1;
+        padding: 0;
+        overflow: hidden;
+        border: 0;
+        border-radius: 0;
+        background: var(--paper-deep);
+        cursor: zoom-in;
       }
 
-      .gallery__backdrop {
-        inset: -32px;
-        width: calc(100% + 64px);
-        height: calc(100% + 64px);
-        filter: blur(28px) brightness(0.48) saturate(0.85);
-        object-fit: cover;
-        transform: scale(1.08);
+      .gallery__item:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        aspect-ratio: 2 / 1;
       }
 
-      .gallery__photo {
+      .gallery__item::after {
+        position: absolute;
         inset: 0;
+        border: 0 solid rgba(255, 255, 255, 0.82);
+        content: "";
+        pointer-events: none;
+        transition: border-width 180ms ease;
+      }
+
+      .gallery__item:hover::after,
+      .gallery__item:focus-visible::after {
+        border-width: 5px;
+      }
+
+      .gallery__item:focus-visible {
         z-index: 1;
+        outline: 3px solid var(--gold);
+        outline-offset: -3px;
+      }
+
+      .gallery__item img {
+        display: block;
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
+        transition: transform 360ms ease;
       }
 
-      .gallery__caption {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 16px;
-        min-height: 58px;
-        padding: 15px 18px;
-        color: rgba(255, 253, 249, 0.88);
-        font-size: 0.82rem;
+      .gallery__item:hover img,
+      .gallery__item:focus-visible img {
+        transform: scale(1.025);
       }
 
-      .gallery__caption small {
-        flex: none;
-        color: var(--gold-light);
-        font-family: Georgia, "Times New Roman", serif;
-        font-size: 0.67rem;
-        letter-spacing: 0.1em;
+      body.is-gallery-open {
+        overflow: hidden;
       }
 
-      .gallery__arrow {
-        position: absolute;
-        top: calc(50% - 29px);
-        z-index: 3;
-        display: grid;
-        width: 42px;
-        height: 42px;
+      .gallery-viewer {
+        width: 100%;
+        max-width: none;
+        height: 100%;
+        max-height: none;
+        margin: 0;
         padding: 0;
-        color: var(--wine-dark);
+        overflow: hidden;
+        color: #fff;
+        border: 0;
+        background: rgba(18, 15, 15, 0.97);
+      }
+
+      .gallery-viewer[open] {
+        display: grid;
+        place-items: center;
+      }
+
+      .gallery-viewer::backdrop {
+        background: rgba(18, 15, 15, 0.97);
+      }
+
+      .gallery-viewer__image {
+        display: block;
+        width: min(100%, 960px);
+        max-height: calc(100dvh - 112px);
+        padding: 18px;
+        object-fit: contain;
+        user-select: none;
+        -webkit-user-drag: none;
+      }
+
+      .gallery-viewer__control {
+        position: fixed;
+        z-index: 2;
+        display: grid;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        color: #fff;
         border: 0;
         border-radius: 50%;
-        background: rgba(255, 253, 249, 0.9);
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+        background: rgba(255, 255, 255, 0.12);
         cursor: pointer;
         place-items: center;
-        transition: 180ms ease;
+        transition: background 180ms ease;
       }
 
-      .gallery__arrow:hover,
-      .gallery__arrow:focus-visible {
-        outline: 2px solid var(--gold-light);
+      .gallery-viewer__control:hover,
+      .gallery-viewer__control:focus-visible {
+        outline: 2px solid rgba(255, 255, 255, 0.82);
         outline-offset: 2px;
-        transform: scale(1.06);
+        background: rgba(255, 255, 255, 0.22);
       }
 
-      .gallery__arrow--prev {
-        left: 13px;
+      .gallery-viewer__close {
+        top: 18px;
+        right: 18px;
+        font-family: Arial, sans-serif;
+        font-size: 1.5rem;
+        line-height: 1;
       }
 
-      .gallery__arrow--next {
-        right: 13px;
+      .gallery-viewer__prev,
+      .gallery-viewer__next {
+        top: 50%;
+        font-size: 1.25rem;
+        transform: translateY(-50%);
       }
 
-      .gallery__dots {
-        display: flex;
-        min-height: 22px;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        margin-top: 18px;
+      .gallery-viewer__prev {
+        left: 14px;
       }
 
-      .gallery__dot {
-        width: 6px;
-        height: 6px;
-        padding: 0;
-        border: 0;
-        border-radius: 999px;
-        background: rgba(255, 253, 249, 0.35);
-        cursor: pointer;
-        transition: 220ms ease;
+      .gallery-viewer__next {
+        right: 14px;
       }
 
-      .gallery__dot[aria-current="true"] {
-        width: 22px;
-        background: var(--gold-light);
-      }
-
-      .gallery__hint {
-        margin: 8px 0 0;
-        color: rgba(255, 253, 249, 0.45);
-        font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
-        font-size: 0.67rem;
-        text-align: center;
+      .gallery-viewer__status {
+        position: fixed;
+        bottom: 24px;
+        left: 50%;
+        margin: 0;
+        color: rgba(255, 255, 255, 0.78);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 0.78rem;
+        letter-spacing: 0.12em;
+        transform: translateX(-50%);
       }
 
       .location {
@@ -693,27 +788,18 @@
         text-decoration: none;
       }
 
-      .map-preview::after {
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(to bottom, transparent 48%, rgba(35, 29, 27, 0.55));
-        content: "";
-        pointer-events: none;
-      }
-
       .map-preview__image {
         display: block;
         width: 100%;
         height: auto;
         aspect-ratio: 2 / 1;
-        filter: saturate(0.78) contrast(0.96);
         object-fit: cover;
         transition: transform 300ms ease;
       }
 
       .map-preview__badge {
         position: absolute;
-        right: 50%;
+        right: 16px;
         bottom: 16px;
         z-index: 1;
         display: inline-flex;
@@ -730,7 +816,6 @@
         font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
         font-size: 0.76rem;
         font-weight: 600;
-        transform: translateX(50%);
       }
 
       .map-preview__naver {
@@ -924,13 +1009,9 @@
           padding-left: 18px;
         }
 
-        .gallery__track {
-          padding-right: 25px;
-          padding-left: 25px;
-        }
-
-        .gallery__slide {
-          flex-basis: calc(100% - 56px);
+        .gallery-viewer__control {
+          width: 40px;
+          height: 40px;
         }
       }
 
@@ -1044,104 +1125,113 @@
 
       <section class="gallery" aria-labelledby="gallery-title">
         <div class="reveal">
-          <p class="section-label">OUR MOMENTS</p>
+          <p class="section-label">GALLERY</p>
           <h2 class="section-title" id="gallery-title">함께여서 빛났던 순간들</h2>
-          <p class="gallery__intro">사진을 좌우로 밀어 가족의 추억을 만나보세요.</p>
-
-          <div class="gallery__shell">
-            <div class="gallery__track" id="gallery-track" tabindex="0" aria-label="가족사진 갤러리">
-              <figure class="gallery__slide">
-                <div class="gallery__media">
-                  <img
-                    class="gallery__backdrop"
-                    src="./img/web/KakaoTalk_20260818_133317618.jpg"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <img
-                    class="gallery__photo"
-                    src="./img/web/KakaoTalk_20260818_133317618.jpg"
-                    alt="전망대 창가에 앉아 있는 임호성 님"
-                    loading="lazy"
-                  />
-                </div>
-                <figcaption class="gallery__caption">
-                  <span>어느 날의 환한 미소</span><small>01 / 04</small>
-                </figcaption>
-              </figure>
-
-              <figure class="gallery__slide">
-                <div class="gallery__media">
-                  <img
-                    class="gallery__backdrop"
-                    src="./img/web/KakaoTalk_20260818_133442032.jpg"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                  />
-                  <img
-                    class="gallery__photo"
-                    src="./img/web/KakaoTalk_20260818_133442032.jpg"
-                    alt="붉은 벽돌 회랑에서 미소 짓는 임호성 님"
-                    loading="lazy"
-                  />
-                </div>
-                <figcaption class="gallery__caption">
-                  <span>함께 걸어온 시간</span><small>02 / 04</small>
-                </figcaption>
-              </figure>
-
-              <figure class="gallery__slide">
-                <div class="gallery__media">
-                  <img
-                    class="gallery__backdrop"
-                    src="./img/web/KakaoTalk_20260818_133505899.jpg"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                  />
-                  <img
-                    class="gallery__photo"
-                    src="./img/web/KakaoTalk_20260818_133505899.jpg"
-                    alt="여행지에서 함께 찍은 가족사진"
-                    loading="lazy"
-                  />
-                </div>
-                <figcaption class="gallery__caption">
-                  <span>가족이라는 이름으로</span><small>03 / 04</small>
-                </figcaption>
-              </figure>
-
-              <figure class="gallery__slide">
-                <div class="gallery__media">
-                  <img
-                    class="gallery__backdrop"
-                    src="./img/web/KakaoTalk_20260818_133615500.jpg"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                  />
-                  <img
-                    class="gallery__photo"
-                    src="./img/web/KakaoTalk_20260818_133615500.jpg"
-                    alt="가족과 함께 하트를 그리며 찍은 사진"
-                    loading="lazy"
-                  />
-                </div>
-                <figcaption class="gallery__caption">
-                  <span>사랑으로 채운 순간들</span><small>04 / 04</small>
-                </figcaption>
-              </figure>
-            </div>
-
-            <button class="gallery__arrow gallery__arrow--prev" id="gallery-prev" type="button" aria-label="이전 사진">&#10094;</button>
-            <button class="gallery__arrow gallery__arrow--next" id="gallery-next" type="button" aria-label="다음 사진">&#10095;</button>
+          <div class="gallery__grid" id="gallery-grid" aria-label="가족사진 갤러리">
+            <button class="gallery__item" type="button" aria-label="첫 번째 사진 크게 보기">
+              <img
+                src="./img/web/KakaoTalk_20260818_133317618.jpg"
+                alt="전망대 창가에 앉아 있는 임호성 님"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+            <button class="gallery__item" type="button" aria-label="두 번째 사진 크게 보기">
+              <img
+                src="./img/web/KakaoTalk_20260818_133442032.jpg"
+                alt="붉은 벽돌 회랑에서 미소 짓는 임호성 님"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+            <button class="gallery__item" type="button" aria-label="세 번째 사진 크게 보기">
+              <img
+                src="./img/web/KakaoTalk_20260818_133505899.jpg"
+                alt="여행지에서 함께 찍은 가족사진"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+            <button class="gallery__item" type="button" aria-label="네 번째 사진 크게 보기">
+              <img
+                src="./img/web/KakaoTalk_20260818_133615500.jpg"
+                alt="가족과 함께 하트를 그리며 찍은 사진"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+            <button class="gallery__item" type="button" aria-label="다섯 번째 사진 크게 보기">
+              <img
+                src="./img/web/gallery-05.webp"
+                alt="마터호른을 배경으로 손을 들어 포즈를 취한 모습"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+            <button class="gallery__item" type="button" aria-label="여섯 번째 사진 크게 보기">
+              <img
+                src="./img/web/gallery-06.webp"
+                alt="마터호른 앞에서 함께 손가락 하트를 만든 모습"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+            <button class="gallery__item" type="button" aria-label="일곱 번째 사진 크게 보기">
+              <img
+                src="./img/web/gallery-07.webp"
+                alt="마터호른이 보이는 산책로에서 포즈를 취한 모습"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+            <button class="gallery__item" type="button" aria-label="여덟 번째 사진 크게 보기">
+              <img
+                src="./img/web/gallery-08.webp"
+                alt="설산 전망대에서 브이 포즈를 한 모습"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+            <button class="gallery__item" type="button" aria-label="아홉 번째 사진 크게 보기">
+              <img
+                src="./img/web/gallery-09.webp"
+                alt="산과 호수를 배경으로 하트 포즈를 한 모습"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
           </div>
-
-          <div class="gallery__dots" id="gallery-dots" aria-label="사진 선택"></div>
-          <p class="gallery__hint" id="gallery-status" aria-live="polite">1번째 사진 / 전체 4장</p>
         </div>
       </section>
+
+      <dialog class="gallery-viewer" id="gallery-viewer" aria-label="사진 크게 보기">
+        <button
+          class="gallery-viewer__control gallery-viewer__close"
+          id="gallery-viewer-close"
+          type="button"
+          aria-label="사진 닫기"
+        >
+          &times;
+        </button>
+        <button
+          class="gallery-viewer__control gallery-viewer__prev"
+          id="gallery-viewer-prev"
+          type="button"
+          aria-label="이전 사진"
+        >
+          &#10094;
+        </button>
+        <img class="gallery-viewer__image" id="gallery-viewer-image" alt="" />
+        <button
+          class="gallery-viewer__control gallery-viewer__next"
+          id="gallery-viewer-next"
+          type="button"
+          aria-label="다음 사진"
+        >
+          &#10095;
+        </button>
+        <p class="gallery-viewer__status" id="gallery-viewer-status" aria-live="polite"></p>
+      </dialog>
 
       <section class="details" aria-labelledby="details-title">
         <div class="reveal">
@@ -1172,6 +1262,33 @@
             </div>
           </dl>
 
+          <div class="event-calendar" aria-label="행사 달력">
+            <div class="event-calendar__heading">
+              <strong id="event-calendar-month">2026. 08</strong>
+              <span>AUGUST</span>
+            </div>
+            <div class="event-calendar__weekdays" aria-hidden="true">
+              <span>일</span>
+              <span>월</span>
+              <span>화</span>
+              <span>수</span>
+              <span>목</span>
+              <span>금</span>
+              <span>토</span>
+            </div>
+            <div
+              class="event-calendar__days"
+              id="event-calendar-days"
+              role="grid"
+              aria-label="2026년 8월 달력"
+            ></div>
+            <p class="event-calendar__schedule">
+              <span data-field="date">2026년 8월 22일 토요일</span>
+              ·
+              <span data-field="time">오후 5시 30분</span>
+            </p>
+          </div>
+
           <p class="countdown" id="countdown" aria-live="polite"></p>
         </div>
       </section>
@@ -1191,8 +1308,8 @@
             >
               <img
                 class="map-preview__image"
-                src="./img/web/map-thumbnail.png"
-                alt="하인선생 일산점 주변 위치 지도"
+                src="./img/web/naver-map-thumbnail.jpg"
+                alt="네이버 지도에 표시된 하인선생 일산점 주변 위치"
                 width="800"
                 height="400"
                 loading="lazy"
@@ -1351,77 +1468,135 @@
         }
       });
 
-      const galleryTrack = document.querySelector("#gallery-track");
-      const gallerySlides = [...document.querySelectorAll(".gallery__slide")];
-      const galleryDots = document.querySelector("#gallery-dots");
-      const galleryStatus = document.querySelector("#gallery-status");
-      let currentSlide = 0;
-      let galleryFrame;
+      const galleryItems = [...document.querySelectorAll(".gallery__item")];
+      const galleryViewer = document.querySelector("#gallery-viewer");
+      const galleryViewerImage = document.querySelector("#gallery-viewer-image");
+      const galleryViewerStatus = document.querySelector("#gallery-viewer-status");
+      let currentGalleryIndex = 0;
+      let gallerySwipeStart = 0;
 
-      function moveToSlide(index, behavior = "smooth") {
-        currentSlide = (index + gallerySlides.length) % gallerySlides.length;
-        const slide = gallerySlides[currentSlide];
-        const left = slide.offsetLeft - (galleryTrack.clientWidth - slide.clientWidth) / 2;
-        galleryTrack.scrollTo({ left, behavior });
-        updateGalleryState();
+      function showGalleryImage(index) {
+        currentGalleryIndex = (index + galleryItems.length) % galleryItems.length;
+        const sourceImage = galleryItems[currentGalleryIndex].querySelector("img");
+        galleryViewerImage.src = sourceImage.currentSrc || sourceImage.src;
+        galleryViewerImage.alt = sourceImage.alt;
+        galleryViewerStatus.textContent = `${currentGalleryIndex + 1} / ${galleryItems.length}`;
       }
 
-      function updateGalleryState() {
-        document.querySelectorAll(".gallery__dot").forEach((dot, index) => {
-          dot.setAttribute("aria-current", String(index === currentSlide));
-        });
-        galleryStatus.textContent = `${currentSlide + 1}번째 사진 / 전체 ${gallerySlides.length}장`;
+      function openGallery(index) {
+        showGalleryImage(index);
+        document.body.classList.add("is-gallery-open");
+        if (typeof galleryViewer.showModal === "function") {
+          galleryViewer.showModal();
+        } else {
+          galleryViewer.setAttribute("open", "");
+        }
       }
 
-      gallerySlides.forEach((_, index) => {
-        const dot = document.createElement("button");
-        dot.className = "gallery__dot";
-        dot.type = "button";
-        dot.setAttribute("aria-label", `${index + 1}번째 사진 보기`);
-        dot.addEventListener("click", () => moveToSlide(index));
-        galleryDots.append(dot);
+      function closeGallery() {
+        if (typeof galleryViewer.close === "function") {
+          galleryViewer.close();
+        } else {
+          galleryViewer.removeAttribute("open");
+          document.body.classList.remove("is-gallery-open");
+          galleryViewerImage.removeAttribute("src");
+        }
+      }
+
+      galleryItems.forEach((item, index) => {
+        item.addEventListener("click", () => openGallery(index));
       });
 
-      document.querySelector("#gallery-prev").addEventListener("click", () => {
-        moveToSlide(currentSlide - 1);
+      document.querySelector("#gallery-viewer-close").addEventListener("click", closeGallery);
+      document.querySelector("#gallery-viewer-prev").addEventListener("click", () => {
+        showGalleryImage(currentGalleryIndex - 1);
+      });
+      document.querySelector("#gallery-viewer-next").addEventListener("click", () => {
+        showGalleryImage(currentGalleryIndex + 1);
       });
 
-      document.querySelector("#gallery-next").addEventListener("click", () => {
-        moveToSlide(currentSlide + 1);
+      galleryViewer.addEventListener("click", (event) => {
+        if (event.target === galleryViewer) closeGallery();
       });
 
-      galleryTrack.addEventListener(
-        "scroll",
-        () => {
-          window.cancelAnimationFrame(galleryFrame);
-          galleryFrame = window.requestAnimationFrame(() => {
-            const center = galleryTrack.scrollLeft + galleryTrack.clientWidth / 2;
-            currentSlide = gallerySlides.reduce((closestIndex, slide, index) => {
-              const slideCenter = slide.offsetLeft + slide.clientWidth / 2;
-              const closestSlide = gallerySlides[closestIndex];
-              const closestCenter = closestSlide.offsetLeft + closestSlide.clientWidth / 2;
-              return Math.abs(slideCenter - center) < Math.abs(closestCenter - center)
-                ? index
-                : closestIndex;
-            }, 0);
-            updateGalleryState();
-          });
-        },
-        { passive: true }
-      );
-
-      galleryTrack.addEventListener("keydown", (event) => {
+      galleryViewer.addEventListener("keydown", (event) => {
         if (event.key === "ArrowLeft") {
           event.preventDefault();
-          moveToSlide(currentSlide - 1);
+          showGalleryImage(currentGalleryIndex - 1);
         }
         if (event.key === "ArrowRight") {
           event.preventDefault();
-          moveToSlide(currentSlide + 1);
+          showGalleryImage(currentGalleryIndex + 1);
         }
       });
 
-      updateGalleryState();
+      galleryViewer.addEventListener("close", () => {
+        document.body.classList.remove("is-gallery-open");
+        galleryViewerImage.removeAttribute("src");
+      });
+
+      galleryViewerImage.addEventListener("pointerdown", (event) => {
+        gallerySwipeStart = event.clientX;
+      });
+
+      galleryViewerImage.addEventListener("pointerup", (event) => {
+        const distance = event.clientX - gallerySwipeStart;
+        if (Math.abs(distance) < 48) return;
+        showGalleryImage(currentGalleryIndex + (distance < 0 ? 1 : -1));
+      });
+
+      function renderEventCalendar(eventDate) {
+        const dateParts = eventDate?.slice(0, 10).split("-").map(Number);
+        if (!dateParts || dateParts.length !== 3 || dateParts.some(Number.isNaN)) return;
+
+        const [year, month, eventDay] = dateParts;
+        const firstWeekday = new Date(year, month - 1, 1).getDay();
+        const daysInMonth = new Date(year, month, 0).getDate();
+        const cellCount = Math.ceil((firstWeekday + daysInMonth) / 7) * 7;
+        const calendarDays = document.querySelector("#event-calendar-days");
+        const calendarHeading = document.querySelector(".event-calendar__heading");
+        const monthName = new Intl.DateTimeFormat("en", {
+          month: "long",
+          timeZone: "UTC"
+        })
+          .format(new Date(Date.UTC(year, month - 1, 1)))
+          .toUpperCase();
+
+        document.querySelector("#event-calendar-month").textContent =
+          `${year}. ${String(month).padStart(2, "0")}`;
+        calendarHeading.querySelector("span").textContent = monthName;
+        calendarDays.setAttribute("aria-label", `${year}년 ${month}월 달력`);
+
+        const cells = [];
+        for (let index = 0; index < cellCount; index += 1) {
+          const cell = document.createElement("span");
+          const day = index - firstWeekday + 1;
+          cell.className = "event-calendar__day";
+          cell.setAttribute("role", "gridcell");
+
+          if (index % 7 === 0) cell.classList.add("event-calendar__day--sunday");
+          if (index % 7 === 6) cell.classList.add("event-calendar__day--saturday");
+
+          if (day < 1 || day > daysInMonth) {
+            cell.setAttribute("aria-hidden", "true");
+          } else {
+            const date = document.createElement("time");
+            date.dateTime = `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+            date.textContent = String(day);
+
+            if (day === eventDay) {
+              date.setAttribute("aria-current", "date");
+              date.setAttribute("aria-label", `${month}월 ${day}일 행사일`);
+            }
+
+            cell.append(date);
+          }
+          cells.push(cell);
+        }
+        calendarDays.replaceChildren(...cells);
+      }
+
+      renderEventCalendar(invitation.eventDate);
 
       if (invitation.eventDate) {
         const eventTime = new Date(invitation.eventDate).getTime();
