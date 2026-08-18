@@ -442,10 +442,12 @@
 
       .detail-row {
         display: grid;
-        grid-template-columns: 58px 1fr;
-        gap: 18px;
-        padding: 19px 4px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 7px;
+        padding: 21px 4px;
         border-bottom: 1px solid var(--line);
+        text-align: center;
       }
 
       .detail-row:last-child {
@@ -457,6 +459,7 @@
         font-size: 0.72rem;
         font-weight: 600;
         letter-spacing: 0.14em;
+        text-indent: 0.14em;
       }
 
       .detail-row dd {
@@ -465,6 +468,7 @@
         font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
         font-size: 0.91rem;
         line-height: 1.7;
+        text-align: center;
       }
 
       .detail-row dd small {
@@ -680,61 +684,76 @@
         background: var(--paper);
       }
 
-      .map-art {
+      .map-preview {
         position: relative;
-        display: grid;
-        min-height: 205px;
+        display: block;
         overflow: hidden;
-        background:
-          linear-gradient(35deg, transparent 47%, rgba(105, 56, 62, 0.08) 48%, rgba(105, 56, 62, 0.08) 51%, transparent 52%),
-          linear-gradient(-28deg, transparent 45%, rgba(169, 120, 70, 0.1) 46%, rgba(169, 120, 70, 0.1) 49%, transparent 50%),
-          #efe7da;
-        place-items: center;
+        color: var(--ink);
+        background: #e9e3d8;
+        text-decoration: none;
       }
 
-      .map-art::before,
-      .map-art::after {
+      .map-preview::after {
         position: absolute;
-        width: 250px;
-        height: 46px;
-        border: 12px solid rgba(255, 253, 249, 0.62);
-        border-right: 0;
-        border-left: 0;
+        inset: 0;
+        background: linear-gradient(to bottom, transparent 48%, rgba(35, 29, 27, 0.55));
         content: "";
+        pointer-events: none;
       }
 
-      .map-art::before {
-        top: 25px;
-        left: -45px;
-        transform: rotate(-22deg);
+      .map-preview__image {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2 / 1;
+        filter: saturate(0.78) contrast(0.96);
+        object-fit: cover;
+        transition: transform 300ms ease;
       }
 
-      .map-art::after {
-        right: -52px;
-        bottom: 18px;
-        transform: rotate(34deg);
-      }
-
-      .pin {
-        position: relative;
+      .map-preview__badge {
+        position: absolute;
+        right: 50%;
+        bottom: 16px;
         z-index: 1;
-        display: grid;
-        width: 54px;
-        height: 54px;
-        color: var(--white);
-        border-radius: 50% 50% 50% 4px;
-        background: var(--wine);
-        box-shadow: 0 12px 24px rgba(72, 35, 41, 0.25);
-        place-items: center;
-        transform: rotate(-45deg);
+        display: inline-flex;
+        min-width: 172px;
+        min-height: 42px;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        padding: 9px 15px 9px 10px;
+        border-radius: 999px;
+        color: #26312a;
+        background: rgba(255, 255, 255, 0.94);
+        box-shadow: 0 8px 24px rgba(30, 35, 31, 0.22);
+        font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+        font-size: 0.76rem;
+        font-weight: 600;
+        transform: translateX(50%);
       }
 
-      .pin span {
-        width: 15px;
-        height: 15px;
-        border: 2px solid currentColor;
-        border-radius: 50%;
-        transform: rotate(45deg);
+      .map-preview__naver {
+        display: grid;
+        width: 25px;
+        height: 25px;
+        color: #fff;
+        border-radius: 7px;
+        background: #03c75a;
+        font-family: Arial, sans-serif;
+        font-size: 0.82rem;
+        font-weight: 800;
+        place-items: center;
+      }
+
+      .map-preview:hover .map-preview__image,
+      .map-preview:focus-visible .map-preview__image {
+        transform: scale(1.025);
+      }
+
+      .map-preview:focus-visible {
+        outline: 3px solid #03c75a;
+        outline-offset: -3px;
       }
 
       .location-info {
@@ -1163,9 +1182,26 @@
           <h2 class="section-title" id="location-title">오시는 길</h2>
 
           <div class="location-card">
-            <div class="map-art" aria-hidden="true">
-              <div class="pin"><span></span></div>
-            </div>
+            <a
+              class="map-preview"
+              href="https://naver.me/xSFaQkCC"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="하인선생 일산점 위치를 네이버 지도에서 보기"
+            >
+              <img
+                class="map-preview__image"
+                src="./img/web/map-thumbnail.png"
+                alt="하인선생 일산점 주변 위치 지도"
+                width="800"
+                height="400"
+                loading="lazy"
+              />
+              <span class="map-preview__badge">
+                <span class="map-preview__naver" aria-hidden="true">N</span>
+                네이버 지도에서 보기
+              </span>
+            </a>
             <div class="location-info">
               <strong data-field="venue">하인선생 일산점</strong>
               <address data-field="address">경기 고양시 일산동구 무궁화로 359</address>
@@ -1250,16 +1286,44 @@
         toastTimer = window.setTimeout(() => toast.classList.remove("is-visible"), 2200);
       }
 
+      async function copyText(text) {
+        if (navigator.clipboard?.writeText) {
+          try {
+            await navigator.clipboard.writeText(text);
+            return true;
+          } catch {
+            // 일부 인앱 브라우저는 Clipboard API 사용을 제한합니다.
+          }
+        }
+
+        const textarea = document.createElement("textarea");
+        textarea.value = text;
+        textarea.setAttribute("readonly", "");
+        textarea.style.position = "fixed";
+        textarea.style.top = "-9999px";
+        document.body.append(textarea);
+        textarea.select();
+        textarea.setSelectionRange(0, textarea.value.length);
+
+        let copied = false;
+        try {
+          copied = document.execCommand("copy");
+        } catch {
+          copied = false;
+        }
+        textarea.remove();
+        return copied;
+      }
+
       document.querySelector("#copy-address").addEventListener("click", async () => {
         if (!invitation.address || invitation.address === "주소 미정") {
           showToast("주소가 아직 등록되지 않았습니다.");
           return;
         }
 
-        try {
-          await navigator.clipboard.writeText(invitation.address);
+        if (await copyText(invitation.address)) {
           showToast("주소를 복사했습니다.");
-        } catch {
+        } else {
           showToast("주소 복사에 실패했습니다.");
         }
       });
@@ -1274,17 +1338,16 @@
         if (navigator.share) {
           try {
             await navigator.share(shareData);
+            return;
           } catch (error) {
-            if (error.name !== "AbortError") showToast("공유에 실패했습니다.");
+            if (error.name === "AbortError") return;
           }
-          return;
         }
 
-        try {
-          await navigator.clipboard.writeText(window.location.href);
+        if (await copyText(window.location.href)) {
           showToast("초대장 주소를 복사했습니다.");
-        } catch {
-          showToast("주소 복사에 실패했습니다.");
+        } else {
+          window.prompt("아래 초대장 주소를 길게 눌러 복사해 주세요.", window.location.href);
         }
       });
 
